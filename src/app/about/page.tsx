@@ -223,7 +223,7 @@ export default function About() {
                                                 {experience.role}
                                             </Text>
                                             <Column as="ul" gap="16">
-                                                {experience.comments.map(comment => (
+                                                {experience?.comments?.map(comment => (
                                                     <Text
                                                         as="li"
                                                         variant="body-default-m"
