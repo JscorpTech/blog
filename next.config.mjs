@@ -17,6 +17,13 @@ const nextConfig = {
         pathname: '/**',
         search: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'blog.jscorp.uz',
+        port: '443',
+        pathname: '/**',
+        search: '',
+      },
     ],
   },
 };
