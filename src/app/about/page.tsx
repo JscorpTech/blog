@@ -147,7 +147,7 @@ export default function About() {
                                     vertical="center"
                                 >
                                     <Icon paddingLeft="12" name="calendar" onBackground="brand-weak"/>
-                                    <Flex paddingX="8">Contact -> Telegram</Flex>
+                                    <Flex paddingX="8">{"Contact -> Telegram"}</Flex>
                                     <IconButton
                                         href={"https://t.me/Azamov_Samandar"}
                                         data-border="rounded"

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://127.0.0.1:8085', // O'zingizning API bazaviy URL'ingizni qo'ying
+  baseURL: 'https://blog.jscorp.uz', // O'zingizning API bazaviy URL'ingizni qo'ying
   timeout: 10000, // So‘rov muddati (millisekundda)
   headers: {
     'Content-Type': 'application/json',
