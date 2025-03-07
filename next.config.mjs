@@ -8,6 +8,17 @@ const withMDX = mdx({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '127.0.0.1',
+        port: '8085',
+        pathname: '/**',
+        search: '',
+      },
+    ],
+  },
 };
 
 export default withMDX(nextConfig);
