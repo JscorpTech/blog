@@ -1,14 +1,12 @@
 "use client"
-import {CustomMDX} from "@/components/mdx";
-import {AvatarGroup, Button, Column, Flex, Heading, Row, SmartImage, Spinner, Text} from "@/once-ui/components";
-import {baseURL} from "@/app/resources";
-import {person} from "@/app/resources/content";
-import {formatDate} from "@/app/utils/formatDate";
+import { Button, Column, Flex, Heading, Row, SmartImage, Spinner, Text } from "@/once-ui/components";
+import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
-import {PostType} from "@/app/types/blog";
-import React, {useEffect, useState} from "react";
+import { PostType } from "@/app/types/blog";
+import React, { useEffect, useState } from "react";
 import apiClient from "@/app/utils/api";
 import styles from "@/components/blog/Posts.module.scss";
+import "./style.css"
 
 interface BlogParams {
     params: {
@@ -16,7 +14,7 @@ interface BlogParams {
     };
 }
 
-export default function Blog({params}: BlogParams) {
+export default function Blog({ params }: BlogParams) {
     const [post, setPost] = useState<PostType | null>(null);
 
     useEffect(() => {
@@ -56,12 +54,12 @@ export default function Blog({params}: BlogParams) {
                     <Text>
                         {post?.desc}
                     </Text>
-                    <div dangerouslySetInnerHTML={{__html: post?.content}}></div>
+                    <div dangerouslySetInnerHTML={{ __html: post?.content }}></div>
                 </Column>
-                <ScrollToHash/>
+                <ScrollToHash />
             </Column>
             : <Flex fillWidth paddingY="128" horizontal="center">
-                <Spinner/>
+                <Spinner />
             </Flex>
     );
 }

@@ -6,7 +6,7 @@ import {
     Flex,
     Heading,
     Icon,
-    IconButton, Skeleton,
+    IconButton,
     SmartImage, Spinner,
     Tag,
     Text,
@@ -18,7 +18,7 @@ import {person, about, social} from "@/app/resources/content";
 import React, {useEffect, useState} from "react";
 import apiClient from "@/app/utils/api";
 import {ExperienceType, StacksType} from "@/app/types/portfolio";
-import Image from "next/image";
+
 
 export default function About() {
     const [experiences, setExperiences] = useState<ExperienceType[] | null>(null);

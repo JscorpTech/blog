@@ -1,0 +1,12 @@
+pre {
+    overflow: scroll;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: #2d2d2d;
+    /* Qoramtir fon */
+    color: #ffffff;
+    /* Oq matn */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
