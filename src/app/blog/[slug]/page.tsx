@@ -54,8 +54,9 @@ export default function Blog({params}: BlogParams) {
                 </Row>
                 <Column as="article" fillWidth>
                     <Text>
-                        {post?.content}
+                        {post?.desc}
                     </Text>
+                    <div dangerouslySetInnerHTML={{__html: post?.content}}></div>
                 </Column>
                 <ScrollToHash/>
             </Column>

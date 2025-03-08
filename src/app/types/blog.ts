@@ -14,6 +14,7 @@ export interface PostType {
     views: number;
     image: string;
     content: string;
+    desc: string;
     tags: TagType[];
     categories: CategoryType[];
     created_at: string;

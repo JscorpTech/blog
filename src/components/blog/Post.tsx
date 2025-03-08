@@ -46,7 +46,7 @@ export default function Post({post}: PostProps) {
                         {post.title}
                     </Heading>
                     <Text>
-                        {post.content.slice(0, 100)}
+                        {post.desc}
                     </Text>
                     <Text variant="label-default-s" onBackground="neutral-weak">
                         {post.created_at && formatDate(post.created_at, false)}
