@@ -1,5 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
+import { YandexMetrika } from '@koiztech/next-yandex-metrika'
 
 import classNames from "classnames";
 
@@ -50,8 +51,8 @@ type FontConfig = {
 };
 
 /*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
+  Replace with code for secondary and tertiary fonts
+  from https://once-ui.com/customize
 */
 const secondary: FontConfig | undefined = undefined;
 const tertiary: FontConfig | undefined = undefined;
@@ -156,6 +157,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           </Flex>
           <Footer />
         </Column>
+        <YandexMetrika clickmap={true} trackLinks={true} accurateTrackBounce={true} webvisor={false} strategy="afterInteractive" />
+
       </ToastProvider>
     </Flex>
   );

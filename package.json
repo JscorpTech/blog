@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.1",
+    "@koiztech/next-yandex-metrika": "^0.0.7",
     "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^14.2.16",
     "axios": "^1.8.2",
